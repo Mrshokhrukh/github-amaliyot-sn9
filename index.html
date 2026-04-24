@@ -1,17 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Portfolio</title>
+    <meta
+        name="description"
+        content="Minimalistik va responsive portfolio website."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#home">Aziz.</a>
+            <button class="menu-toggle" aria-label="Menyuni ochish" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav">
+                <a href="#about">Men haqimda</a>
+                <a href="#projects">Loyihalar</a>
+                <a href="#services">Xizmatlar</a>
+                <a href="#contact">Aloqa</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                
+                <div class="hero-copy">
+                    <p class="eyebrow">Frontend Developer / UI Designer</p>
+                    <h1>Minimal dizayn, aniq mazmun, kuchli birinchi taassurot.</h1>
+                    <p class="hero-text">
+                        Shaxsiy brendlar, startaplar va kichik bizneslar uchun toza,
+                        tez va esda qoladigan responsive veb-saytlar yarataman.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-dark" href="#projects">Loyihalarni Ko'rish</a>
+                        <a class="btn btn-light" href="#contact">Bog'lanish</a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <p class="card-label">Freelance uchun ochiq</p>
+                    <div class="metric">
+                        <strong>12+</strong>
+                        <span>Tugallangan loyiha</span>
+                    </div>
+                    <div class="metric">
+                        <strong>4 yrs</strong>
+                        <span>Dizayn va frontend tajribasi</span>
+                    </div>
+                    <div class="metric">
+                        <strong>100%</strong>
+                        <span>Responsive va foydalanuvchi markazli yondashuv</span>
+                    </div>
+                </div>
 
 
+            </section>
 
+            <section class="section-grid" id="about">
+                <div class="section-intro">
+                    <p class="section-tag">Men haqimda</p>
+                    <h2>O'ylangan dizayn va amaliy frontend yechimlar.</h2>
+                </div>
+                <div class="section-content">
+                    <p>
+                        Men sodda layout, kuchli tipografiya va tez yuklanadigan
+                        sahifalarga e'tibor beraman. Ishlarimda ortiqcha elementlar
+                        kamaytiriladi va asosiy urg'u kontent, mahsulot qiymati hamda
+                        qulay foydalanishga qaratiladi.
+                    </p>
+                    <div class="stats">
+                        <article>
+                            <strong>Joylashuv</strong>
+                            <span>Toshkent, O'zbekiston</span>
+                        </article>
+                        <article>
+                            <strong>Asosiy stack</strong>
+                            <span>HTML, CSS, JavaScript</span>
+                        </article>
+                        <article>
+                            <strong>Yo'nalish</strong>
+                            <span>Portfolio, landing page, biznes saytlar</span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <div class="section-header">
+                    <p class="section-tag">Loyihalar</p>
+                    <h2>Toza vizual, tartibli kontent, responsive layout.</h2>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <p class="project-index">01</p>
+                        <h3>Nova Studio</h3>
+                        <p>
+                            Kreativ studiya uchun minimal uslubdagi va kuchli
+                            case-study bloklariga ega portfolio sayt.
+                        </p>
+                        <span>Branding / UI / Frontend</span>
+                    </article>
+                    <article class="project-card">
+                        <p class="project-index">02</p>
+                        <h3>Horizon Tech</h3>
+                        <p>
+                            SaaS mahsulot uchun aniq kommunikatsiya, konversiya va
+                            yengil mobil tajribaga yo'naltirilgan landing page.
+                        </p>
+                        <span>Landing Page / Responsive Design</span>
+                    </article>
+                    <article class="project-card">
+                        <p class="project-index">03</p>
+                        <h3>Mono Cafe</h3>
+                        <p>
+                            Restoran uchun sokin tipografiya, yumshoq kontrast va
+                            bron qilishga yo'naltirilgan bo'limlar bilan sayt.
+                        </p>
+                        <span>Business Website / UX Writing</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <div class="section-header">
+                    <p class="section-tag">Xizmatlar</p>
+                    <h2>Siz uchun nimalar yaratib bera olaman.</h2>
+                </div>
+                <div class="service-list">
+                    <article>
+                        <h3>Portfolio Saytlar</h3>
+                        <p>Shaxsiy brend va freelancerlar uchun professional online ko'rinish.</p>
+                    </article>
+                    <article>
+                        <h3>Landing Page</h3>
+                        <p>Mahsulot yoki reklama kampaniyasi uchun tez tushunarli va samarali sahifalar.</p>
+                    </article>
+                    <article>
+                        <h3>Responsive UI</h3>
+                        <p>Desktop, planshet va mobil qurilmalarda toza ko'rinadigan interfeyslar.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div>
+                    <p class="section-tag">Aloqa</p>
+                    <h2>Keyingi loyihangiz uchun toza va zamonaviy sayt kerakmi?</h2>
+                </div>
+                <a class="contact-link" href="mailto:hello@aziz.dev">hello@aziz.dev</a>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
